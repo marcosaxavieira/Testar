@@ -9,141 +9,141 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AgenciaTurismo
 build_property.RootNamespace = AgenciaTurismo
-build_property.ProjectDir = C:\Users\marco\Downloads\Marcos_Vieira_DR4_AT\AgenciaTurismo\
+build_property.ProjectDir = /home/runner/work/Testar/Testar/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\marco\Downloads\Marcos_Vieira_DR4_AT\AgenciaTurismo
+build_property.MSBuildProjectDirectory = /home/runner/work/Testar/Testar
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/marco/Downloads/Marcos_Vieira_DR4_AT/AgenciaTurismo/Areas/Identity/Pages/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+[/home/runner/work/Testar/Testar/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marco/Downloads/Marcos_Vieira_DR4_AT/AgenciaTurismo/Pages/Clientes/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50ZXNcQ3JlYXRlLmNzaHRtbA==
+[/home/runner/work/Testar/Testar/Pages/Clientes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2xpZW50ZXMvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marco/Downloads/Marcos_Vieira_DR4_AT/AgenciaTurismo/Pages/Clientes/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50ZXNcRGVsZXRlLmNzaHRtbA==
+[/home/runner/work/Testar/Testar/Pages/Clientes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2xpZW50ZXMvRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marco/Downloads/Marcos_Vieira_DR4_AT/AgenciaTurismo/Pages/Clientes/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50ZXNcRGV0YWlscy5jc2h0bWw=
+[/home/runner/work/Testar/Testar/Pages/Clientes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2xpZW50ZXMvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marco/Downloads/Marcos_Vieira_DR4_AT/AgenciaTurismo/Pages/Clientes/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50ZXNcRWRpdC5jc2h0bWw=
+[/home/runner/work/Testar/Testar/Pages/Clientes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2xpZW50ZXMvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marco/Downloads/Marcos_Vieira_DR4_AT/AgenciaTurismo/Pages/Clientes/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50ZXNcSW5kZXguY3NodG1s
+[/home/runner/work/Testar/Testar/Pages/Clientes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2xpZW50ZXMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marco/Downloads/Marcos_Vieira_DR4_AT/AgenciaTurismo/Pages/Destinos/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVzdGlub3NcQ3JlYXRlLmNzaHRtbA==
+[/home/runner/work/Testar/Testar/Pages/Destinos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGVzdGlub3MvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marco/Downloads/Marcos_Vieira_DR4_AT/AgenciaTurismo/Pages/Destinos/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVzdGlub3NcRGVsZXRlLmNzaHRtbA==
+[/home/runner/work/Testar/Testar/Pages/Destinos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGVzdGlub3MvRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marco/Downloads/Marcos_Vieira_DR4_AT/AgenciaTurismo/Pages/Destinos/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVzdGlub3NcRGV0YWlscy5jc2h0bWw=
+[/home/runner/work/Testar/Testar/Pages/Destinos/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGVzdGlub3MvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marco/Downloads/Marcos_Vieira_DR4_AT/AgenciaTurismo/Pages/Destinos/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVzdGlub3NcRWRpdC5jc2h0bWw=
+[/home/runner/work/Testar/Testar/Pages/Destinos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGVzdGlub3MvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marco/Downloads/Marcos_Vieira_DR4_AT/AgenciaTurismo/Pages/Destinos/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVzdGlub3NcSW5kZXguY3NodG1s
+[/home/runner/work/Testar/Testar/Pages/Destinos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGVzdGlub3MvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marco/Downloads/Marcos_Vieira_DR4_AT/AgenciaTurismo/Pages/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+[/home/runner/work/Testar/Testar/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marco/Downloads/Marcos_Vieira_DR4_AT/AgenciaTurismo/Pages/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+[/home/runner/work/Testar/Testar/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marco/Downloads/Marcos_Vieira_DR4_AT/AgenciaTurismo/Pages/PacotesTuristicos/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFjb3Rlc1R1cmlzdGljb3NcQ3JlYXRlLmNzaHRtbA==
+[/home/runner/work/Testar/Testar/Pages/PacotesTuristicos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGFjb3Rlc1R1cmlzdGljb3MvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marco/Downloads/Marcos_Vieira_DR4_AT/AgenciaTurismo/Pages/PacotesTuristicos/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFjb3Rlc1R1cmlzdGljb3NcRGVsZXRlLmNzaHRtbA==
+[/home/runner/work/Testar/Testar/Pages/PacotesTuristicos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGFjb3Rlc1R1cmlzdGljb3MvRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marco/Downloads/Marcos_Vieira_DR4_AT/AgenciaTurismo/Pages/PacotesTuristicos/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFjb3Rlc1R1cmlzdGljb3NcRGV0YWlscy5jc2h0bWw=
+[/home/runner/work/Testar/Testar/Pages/PacotesTuristicos/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGFjb3Rlc1R1cmlzdGljb3MvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marco/Downloads/Marcos_Vieira_DR4_AT/AgenciaTurismo/Pages/PacotesTuristicos/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFjb3Rlc1R1cmlzdGljb3NcRWRpdC5jc2h0bWw=
+[/home/runner/work/Testar/Testar/Pages/PacotesTuristicos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGFjb3Rlc1R1cmlzdGljb3MvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marco/Downloads/Marcos_Vieira_DR4_AT/AgenciaTurismo/Pages/PacotesTuristicos/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFjb3Rlc1R1cmlzdGljb3NcSW5kZXguY3NodG1s
+[/home/runner/work/Testar/Testar/Pages/PacotesTuristicos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGFjb3Rlc1R1cmlzdGljb3MvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marco/Downloads/Marcos_Vieira_DR4_AT/AgenciaTurismo/Pages/PacotesTuristicos/PacoteDesconto.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFjb3Rlc1R1cmlzdGljb3NcUGFjb3RlRGVzY29udG8uY3NodG1s
+[/home/runner/work/Testar/Testar/Pages/PacotesTuristicos/PacoteDesconto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGFjb3Rlc1R1cmlzdGljb3MvUGFjb3RlRGVzY29udG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marco/Downloads/Marcos_Vieira_DR4_AT/AgenciaTurismo/Pages/PacotesTuristicos/PacoteDestino.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFjb3Rlc1R1cmlzdGljb3NcUGFjb3RlRGVzdGluby5jc2h0bWw=
+[/home/runner/work/Testar/Testar/Pages/PacotesTuristicos/PacoteDestino.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGFjb3Rlc1R1cmlzdGljb3MvUGFjb3RlRGVzdGluby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marco/Downloads/Marcos_Vieira_DR4_AT/AgenciaTurismo/Pages/PacotesTuristicos/PacoteReserva.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFjb3Rlc1R1cmlzdGljb3NcUGFjb3RlUmVzZXJ2YS5jc2h0bWw=
+[/home/runner/work/Testar/Testar/Pages/PacotesTuristicos/PacoteReserva.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGFjb3Rlc1R1cmlzdGljb3MvUGFjb3RlUmVzZXJ2YS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marco/Downloads/Marcos_Vieira_DR4_AT/AgenciaTurismo/Pages/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+[/home/runner/work/Testar/Testar/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marco/Downloads/Marcos_Vieira_DR4_AT/AgenciaTurismo/Pages/Reservas/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzZXJ2YXNcQ3JlYXRlLmNzaHRtbA==
+[/home/runner/work/Testar/Testar/Pages/Reservas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVzZXJ2YXMvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marco/Downloads/Marcos_Vieira_DR4_AT/AgenciaTurismo/Pages/Reservas/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzZXJ2YXNcRGVsZXRlLmNzaHRtbA==
+[/home/runner/work/Testar/Testar/Pages/Reservas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVzZXJ2YXMvRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marco/Downloads/Marcos_Vieira_DR4_AT/AgenciaTurismo/Pages/Reservas/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzZXJ2YXNcRGV0YWlscy5jc2h0bWw=
+[/home/runner/work/Testar/Testar/Pages/Reservas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVzZXJ2YXMvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marco/Downloads/Marcos_Vieira_DR4_AT/AgenciaTurismo/Pages/Reservas/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzZXJ2YXNcRWRpdC5jc2h0bWw=
+[/home/runner/work/Testar/Testar/Pages/Reservas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVzZXJ2YXMvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marco/Downloads/Marcos_Vieira_DR4_AT/AgenciaTurismo/Pages/Reservas/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzZXJ2YXNcSW5kZXguY3NodG1s
+[/home/runner/work/Testar/Testar/Pages/Reservas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVzZXJ2YXMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marco/Downloads/Marcos_Vieira_DR4_AT/AgenciaTurismo/Pages/Shared/_LoginPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+[/home/runner/work/Testar/Testar/Pages/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marco/Downloads/Marcos_Vieira_DR4_AT/AgenciaTurismo/Pages/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[/home/runner/work/Testar/Testar/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marco/Downloads/Marcos_Vieira_DR4_AT/AgenciaTurismo/Pages/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[/home/runner/work/Testar/Testar/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marco/Downloads/Marcos_Vieira_DR4_AT/AgenciaTurismo/Pages/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+[/home/runner/work/Testar/Testar/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marco/Downloads/Marcos_Vieira_DR4_AT/AgenciaTurismo/Pages/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-txrpunv336
+[/home/runner/work/Testar/Testar/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-tj6gzonyz3
