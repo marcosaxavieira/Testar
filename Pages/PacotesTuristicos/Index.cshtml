@@ -1,0 +1,125 @@
+﻿@page
+@using AgenciaTurismo.Pages.PacotesTuristicos
+@model AgenciaTurismo.Pages.PacotesTuristicos.IndexModel
+
+@{
+    ViewData["Title"] = "Pacotes Turísticos";
+}
+
+<!-- Estilo personalizado (igual ao cliente) -->
+<style>
+    body {
+        font-family: 'Segoe UI', Roboto, sans-serif;
+        background-color: #f4f6f9;
+    }
+
+    .card {
+        background-color: white;
+        border-radius: 8px;
+        padding: 30px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        margin-top: 30px;
+    }
+
+    .card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .card-title {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: #343a40;
+    }
+
+    .btn-outline-azul-escuro {
+        color: #0a58ca;
+        background-color: transparent;
+        transition: all 0.3s ease;
+        font-weight: 500;
+        border-radius: 6px;
+        border: none;
+    }
+
+        .btn-outline-azul-escuro:hover {
+            background-color: #0a58ca;
+            color: white;
+        }
+
+    .btn-adicionar {
+        color: #0a58ca;
+        border: 1px solid #0a58ca;
+        background-color: transparent;
+        transition: all 0.3s ease;
+        font-weight: 500;
+        border-radius: 8px;
+        padding: 6px 14px;
+        text-decoration: none;
+    }
+
+        .btn-adicionar:hover {
+            background-color: #0a58ca;
+            color: white;
+        }
+
+    .table th, .table td {
+        vertical-align: middle;
+    }
+
+    .table thead {
+        background-color: #e9ecef;
+    }
+
+    .table th {
+        font-weight: 600;
+        color: #495057;
+    }
+
+    .table td {
+        color: #212529;
+    }
+</style>
+
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h2 class="card-title">Lista de Pacotes Turísticos</h2>
+            <a asp-page="Create" class="btn btn-adicionar">Adicionar</a>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Data Início</th>
+                        <th class="text-center">Capacidade</th>
+                        <th>Preço do Pacote</th>
+                        <th class="text-center">Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.PacoteTuristico)
+                    {
+                        <tr>
+                            <td>@Html.DisplayFor(modelItem => item.Titulo)</td>
+                            <td>@($"{item.DataInicio:dd/MM/yyyy}")</td>
+                            <td class="text-center">@Html.DisplayFor(modelItem => item.CapacidadeMaxima)</td>
+                            <td>@($"{item.Preco:C}")</td>
+                            <td class="text-center">
+                                <a asp-page="./Edit" asp-route-id="@item.Id" class="btn btn-outline-azul-escuro btn-sm me-1">Editar</a>
+                                <a asp-page="./Details" asp-route-id="@item.Id" class="btn btn-outline-azul-escuro btn-sm me-1">Detalhes</a>
+                                <a asp-page="./Delete" asp-route-id="@item.Id" class="btn btn-outline-azul-escuro btn-sm">Excluir</a>
+                                <a asp-page="./PacoteDestino" asp-route-id="@item.Id" class="btn btn-outline-azul-escuro btn-sm">Destino</a>
+                                <a asp-page="./PacoteReserva" asp-route-id="@item.Id" class="btn btn-outline-azul-escuro btn-sm">Reservas</a>
+                                <a asp-page="./PacoteDesconto" asp-route-id="@item.Id" class="btn btn-outline-azul-escuro btn-sm">Desconto</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

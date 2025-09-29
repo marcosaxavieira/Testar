@@ -1,0 +1,55 @@
+﻿@page "{id:int}"
+@using AgenciaTurismo.Pages.PacotesTuristicos
+@model AgenciaTurismo.Pages.PacotesTuristicos.PacoteDescontoModel
+@{
+    ViewData["Title"] = "Cálculo de Desconto";
+}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.8/jquery.inputmask.min.js"></script>
+
+<div class="d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+    <div class="card w-50 p-4 shadow">
+        <div class="text-center mb-4">
+            <h2 class="fw-bold">@Model.NomePacote</h2>
+        </div>
+        <div class="card-body">
+            <form method="post">
+                <input type="hidden" asp-for="Id" />
+
+                <div class="mb-3">
+                    <label for="precoInput" class="form-label">Preço do Pacote:</label>
+                    <input asp-for="PrecoOriginalProduto" id="precoInput" class="form-control" inputmode="decimal" required />
+                </div>
+
+                <div class="text-start">
+                    <button type="submit" class="btn btn-primary px-4 py-2 fw-semibold">Desconto 10%</button>
+                    <a asp-page="./Index" class="btn btn-primary px-4 py-2 fw-semibold">Voltar</a>
+                </div>
+
+            </form>
+
+            @if (Model.PrecoComDesconto.HasValue)
+            {
+                <div class="mt-4 alert alert-success text-center">
+                    <p><strong>Preço original:</strong> R$ @Model.PrecoOriginalProduto.ToString("N2")</p>
+                    <p><strong>Preço com desconto:</strong> R$ @Model.PrecoComDesconto.Value.ToString("N2")</p>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('#precoInput').inputmask('decimal', {
+            groupSeparator: '.',
+            radixPoint: ',',
+            digits: 2,
+            autoGroup: true,
+            rightAlign: false,
+            removeMaskOnSubmit: true
+        });
+    });
+</script>

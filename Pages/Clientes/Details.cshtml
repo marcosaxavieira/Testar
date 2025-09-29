@@ -1,0 +1,88 @@
+﻿@page
+@using AgenciaTurismo.Pages.Clientes
+@model AgenciaTurismo.Pages.Clientes.DetailsModel
+
+@{
+    ViewData["Title"] = "Detalhes do Cliente";
+}
+
+<style>
+    body {
+        font-family: 'Segoe UI', Roboto, sans-serif;
+        background-color: #a3b0bc; /* azul acinzentado escurecido */
+        color: #212529;
+    }
+
+    .details-container {
+        background-color: rgba(255, 255, 255, 0.6); /* box translúcido */
+        border-radius: 12px;
+        padding: 40px;
+        margin: 50px auto;
+        max-width: 600px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(4px);
+        text-align: left;
+    }
+
+    .details-title {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: #0a58ca;
+        margin-bottom: 30px;
+    }
+
+    .details-row {
+        display: flex;
+        margin-bottom: 20px;
+        font-size: 1.1rem;
+        color: #212529;
+    }
+
+    .details-label {
+        font-weight: 600;
+        color: #495057;
+        width: 100px;
+    }
+
+    .details-value {
+        flex: 1;
+    }
+
+    .btn-outline-azul-escuro {
+        color: #0a58ca;
+        border: 2px solid #0a58ca;
+        background-color: transparent;
+        transition: all 0.3s ease;
+        font-weight: 500;
+        border-radius: 6px;
+        padding: 6px 14px;
+        text-decoration: none;
+    }
+
+        .btn-outline-azul-escuro:hover {
+            background-color: #0a58ca;
+            color: white;
+        }
+
+    .back-button {
+        margin-top: 30px;
+    }
+</style>
+
+<div class="details-container">
+    <h2 class="details-title">Detalhes do Cliente</h2>
+
+    <div class="details-row">
+        <div class="details-label">Nome:</div>
+        <div class="details-value">@Model.Cliente.Nome</div>
+    </div>
+
+    <div class="details-row">
+        <div class="details-label">E-mail:</div>
+        <div class="details-value">@Model.Cliente.Email</div>
+    </div>
+
+    <div class="back-button">
+        <a asp-page="./Index" class="btn btn-outline-azul-escuro">Voltar</a>
+    </div>
+</div>

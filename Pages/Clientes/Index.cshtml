@@ -1,0 +1,118 @@
+﻿@page
+@using AgenciaTurismo.Pages.Clientes
+@model AgenciaTurismo.Pages.Clientes.IndexModel
+
+@{
+    ViewData["Title"] = "Clientes";
+}
+
+<!-- Estilo personalizado -->
+<style>
+    body {
+        font-family: 'Segoe UI', Roboto, sans-serif;
+        background-color: #f4f6f9;
+    }
+
+    .card {
+        background-color: white;
+        border-radius: 8px;
+        padding: 30px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        margin-top: 30px;
+    }
+
+    .card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .card-title {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: #343a40;
+    }
+
+    /* Botão padrão para ações */
+    .btn-outline-azul-escuro {
+        color: #0a58ca;
+        background-color: transparent;
+        transition: all 0.3s ease;
+        font-weight: 500;
+        border-radius: 6px;
+        border: none;
+    }
+
+        .btn-outline-azul-escuro:hover {
+            background-color: #0a58ca;
+            color: white;
+        }
+
+    /* Botão exclusivo para "Adicionar" com borda fina azul escuro */
+    .btn-adicionar {
+        color: #0a58ca;
+        border: 1px solid #0a58ca; /* borda fina */
+        background-color: transparent;
+        transition: all 0.3s ease;
+        font-weight: 500;
+        border-radius: 8px; /* pontas arredondadas */
+        padding: 6px 14px;
+        text-decoration: none;
+    }
+
+        .btn-adicionar:hover {
+            background-color: #0a58ca;
+            color: white;
+        }
+
+    .table th, .table td {
+        vertical-align: middle;
+    }
+
+    .table thead {
+        background-color: #e9ecef;
+    }
+
+    .table th {
+        font-weight: 600;
+        color: #495057;
+    }
+
+    .table td {
+        color: #212529;
+    }
+</style>
+
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h2 class="card-title">Lista de Clientes</h2>
+            <a asp-page="Create" class="btn btn-adicionar">Adicionar</a>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>@Html.DisplayNameFor(model => model.Cliente[0].Nome)</th>
+                        <th class="text-center">Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Cliente)
+                    {
+                        <tr>
+                            <td>@Html.DisplayFor(modelItem => item.Nome)</td>
+                            <td class="text-center">
+                                <a asp-page="./Edit" asp-route-id="@item.Id" class="btn btn-outline-azul-escuro btn-sm me-1">Editar</a>
+                                <a asp-page="./Details" asp-route-id="@item.Id" class="btn btn-outline-azul-escuro btn-sm me-1">Detalhes</a>
+                                <a asp-page="./Delete" asp-route-id="@item.Id" class="btn btn-outline-azul-escuro btn-sm">Excluir</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

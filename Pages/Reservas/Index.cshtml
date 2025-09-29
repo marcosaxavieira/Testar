@@ -1,0 +1,126 @@
+﻿@page
+@using AgenciaTurismo.Pages.Reservas
+@model AgenciaTurismo.Pages.Reservas.IndexModel
+
+@{
+    ViewData["Title"] = "Reservas";
+}
+
+<style>
+    body {
+        font-family: 'Segoe UI', Roboto, sans-serif;
+        background-color: #f4f6f9;
+    }
+
+    .card {
+        background-color: white;
+        border-radius: 8px;
+        padding: 30px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        margin-top: 30px;
+    }
+
+    .card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .card-title {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: #343a40;
+        margin: 0;
+    }
+
+    .btn-novo {
+        color: #0a58ca;
+        border: 1px solid #0a58ca;
+        background-color: transparent;
+        transition: all 0.3s ease;
+        font-weight: 500;
+        border-radius: 8px;
+        padding: 6px 14px;
+        text-decoration: none;
+    }
+
+        .btn-novo:hover {
+            background-color: #0a58ca;
+            color: white;
+        }
+
+    .btn-acao {
+        color: #0a58ca;
+        background-color: transparent;
+        border: none;
+        font-weight: 500;
+        padding: 0;
+        margin-right: 10px;
+        text-decoration: underline;
+    }
+
+        .btn-acao:hover {
+            color: #084298;
+        }
+
+    .table thead {
+        background-color: #e9ecef;
+    }
+
+    .table th {
+        font-weight: 600;
+        color: #495057;
+    }
+
+    .table td {
+        color: #212529;
+        vertical-align: middle;
+    }
+
+    .pacote-info {
+        font-size: 0.9rem;
+        color: #6c757d;
+    }
+</style>
+
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h2 class="card-title">Reservas</h2>
+            <a asp-page="Create" class="btn-novo">Adicionar</a>
+        </div>
+
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Cliente</th>
+                    <th>Pacote Turístico</th>
+                    <th>Início</th>
+                    <th>Data da Reserva</th>
+                    <th class="text-center">Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Reserva)
+                {
+                    <tr>
+                        <td>@item.Cliente?.Nome</td>
+                        <td>
+                            @item.PacoteTuristico?.Titulo <br />                            
+                        </td>
+                        <td>
+                            @($"{item.PacoteTuristico?.DataInicio:dd/MM/yyyy}")
+                        </td>
+                        <td>
+                            @($"{item.DataReserva:dd/MM/yyyy}")
+                       </td>
+                        <td class="text-center">
+                            <a asp-page="./Delete" asp-route-id="@item.Id" class="btn-acao">Excluir</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

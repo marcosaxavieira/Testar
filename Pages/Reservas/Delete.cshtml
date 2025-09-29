@@ -1,0 +1,87 @@
+﻿@page
+@using AgenciaTurismo.Pages.Reservas
+@model AgenciaTurismo.Pages.Reservas.DeleteModel
+
+@{
+    ViewData["Title"] = "Excluir Reserva";
+}
+
+<style>
+    body {
+        font-family: 'Segoe UI', Roboto, sans-serif;
+        background-color: #f4f6f9;
+    }
+
+    .card {
+        background-color: white;
+        border-radius: 8px;
+        padding: 30px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        margin-top: 30px;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card-title {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: #343a40;
+        margin-bottom: 20px;
+    }
+
+    .info-label {
+        font-weight: 600;
+        color: #495057;
+    }
+
+    .info-value {
+        margin-bottom: 15px;
+        color: #212529;
+    }
+
+    .btn-acoes {
+        display: flex;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .btn-deletar, .btn-voltar {
+        color: #fff;
+        background-color: #0a58ca;
+        border: none;
+        padding: 8px 20px;
+        border-radius: 6px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        text-decoration: none;
+    }
+
+        .btn-deletar:hover, .btn-voltar:hover {
+            background-color: #084298;
+        }
+</style>
+
+<div class="card">
+    <h2 class="card-title">Excluir Reserva</h2>
+    <p>Tem certeza que deseja excluir esta reserva?</p>
+
+    <div>
+        <div class="info-label">Cliente</div>
+        <div class="info-value">@Model.Reserva.Cliente?.Nome</div>
+
+        <div class="info-label">Pacote Turístico</div>
+        <div class="info-value">@Model.Reserva.PacoteTuristico?.Titulo</div>
+
+        <div class="info-label">Data da Reserva</div>
+        <div class="info-value">@($"{Model.Reserva.DataReserva:dd/MM/yyyy}")</div>
+    </div>
+
+    <form method="post">
+        <input type="hidden" asp-for="Reserva.Id" />
+        <div class="btn-acoes">
+            <button type="submit" class="btn-deletar">Excluir</button>
+            <a asp-page="./Index" class="btn-voltar">Voltar</a>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,154 @@
+﻿@page
+@using AgenciaTurismo.Pages.PacotesTuristicos
+@model AgenciaTurismo.Pages.PacotesTuristicos.DeleteModel
+
+@{
+    ViewData["Title"] = "Excluir Pacote Turístico";
+}
+
+<style>
+    body {
+        font-family: 'Segoe UI', Roboto, sans-serif;
+        background-color: #a3b0bc;
+        color: #212529;
+    }
+
+    .create-container {
+        background-color: rgba(255, 255, 255, 0.6);
+        border-radius: 12px;
+        padding: 40px;
+        margin: 50px auto;
+        max-width: 600px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(4px);
+        text-align: left;
+    }
+
+    .create-title {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: #dc3545;
+        margin-bottom: 30px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-weight: 600;
+        color: #495057;
+        margin-bottom: 6px;
+        display: block;
+    }
+
+    .form-control-static {
+        font-size: 1rem;
+        padding: 8px 0;
+        color: #212529;
+    }
+
+    .inline-group {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+
+        .inline-group .form-group {
+            flex: 1;
+        }
+
+    .btn-outline-azul-escuro {
+        color: #0a58ca;
+        border: 1px solid #0a58ca;
+        background-color: transparent;
+        transition: all 0.3s ease;
+        font-weight: 500;
+        border-radius: 8px;
+        padding: 6px 14px;
+        text-decoration: none;
+    }
+
+        .btn-outline-azul-escuro:hover {
+            background-color: #0a58ca;
+            color: white;
+        }
+
+    .btn-outline-danger {
+        color: #dc3545;
+        border: 1px solid #dc3545;
+        background-color: transparent;
+        transition: all 0.3s ease;
+        font-weight: 500;
+        border-radius: 8px;
+        padding: 6px 14px;
+        text-decoration: none;
+    }
+
+        .btn-outline-danger:hover {
+            background-color: #dc3545;
+            color: white;
+        }
+
+    .action-buttons {
+        margin-top: 30px;
+        display: flex;
+        gap: 10px;
+    }
+
+    .text-danger {
+        color: #dc3545;
+    }
+</style>
+
+<div class="create-container">
+    <h2 class="create-title">Excluir Pacote Turístico</h2>
+
+    <form method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+        <input type="hidden" asp-for="PacoteTuristico.Id" />
+
+        <div class="form-group">
+            <label>Título:</label>
+            <div class="form-control-static">@Model.PacoteTuristico.Titulo</div>
+        </div>
+
+        <div class="inline-group">
+            <div class="form-group">
+                <label>Data de Início:</label>
+                <div class="form-control-static">
+                    @(Model.PacoteTuristico.DataInicio.HasValue
+                                        ? Model.PacoteTuristico.DataInicio.Value.ToShortDateString()
+                                        : "")
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Capacidade Máxima:</label>
+                <div class="form-control-static">@Model.PacoteTuristico.CapacidadeMaxima</div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Preço:</label>
+            <div class="form-control-static">
+                @(Model.PacoteTuristico.Preco.HasValue
+                                ? $"R$ {Model.PacoteTuristico.Preco.Value:F2}"
+                                : "R$ 0,00")
+            </div>
+
+        </div>
+
+        <div class="action-buttons">
+            <input type="submit" value="Excluir" class="btn btn-outline-danger" />
+            <a asp-page="Index" class="btn btn-outline-azul-escuro">Cancelar</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

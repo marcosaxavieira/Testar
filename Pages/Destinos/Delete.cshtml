@@ -1,0 +1,102 @@
+﻿@page
+@using AgenciaTurismo.Pages.Destinos
+@model AgenciaTurismo.Pages.Destinos.DeleteModel
+
+@{
+    ViewData["Title"] = "Excluir Destino";
+}
+
+<style>
+    body {
+        font-family: 'Segoe UI', Roboto, sans-serif;
+        background-color: #a3b0bc;
+        color: #212529;
+    }
+
+    .delete-container {
+        background-color: rgba(255, 255, 255, 0.6);
+        border-radius: 12px;
+        padding: 40px;
+        margin: 50px auto;
+        max-width: 600px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(4px);
+        text-align: left;
+    }
+
+    .delete-title {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: #0a58ca;
+        margin-bottom: 20px;
+    }
+
+    .delete-warning {
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: #343a40;
+        margin-bottom: 30px;
+    }
+
+    .details-row {
+        display: flex;
+        margin-bottom: 20px;
+        font-size: 1.1rem;
+        color: #212529;
+    }
+
+    .details-label {
+        font-weight: 600;
+        color: #495057;
+        width: 100px;
+    }
+
+    .details-value {
+        flex: 1;
+    }
+
+    .btn-outline-azul-escuro {
+        color: #0a58ca;
+        border: 1px solid #0a58ca;
+        background-color: transparent;
+        transition: all 0.3s ease;
+        font-weight: 500;
+        border-radius: 8px;
+        padding: 6px 14px;
+        text-decoration: none;
+    }
+
+        .btn-outline-azul-escuro:hover {
+            background-color: #0a58ca;
+            color: white;
+        }
+
+    .action-buttons {
+        margin-top: 30px;
+        display: flex;
+        gap: 10px;
+    }
+</style>
+
+<div class="delete-container">
+    <h2 class="delete-title">Excluir Destino</h2>
+    <div class="delete-warning">Tem certeza que deseja excluir este destino?</div>
+
+    <div class="details-row">
+        <div class="details-label">Cidade:</div>
+        <div class="details-value">@Model.Destino.Cidade</div>
+    </div>
+
+    <div class="details-row">
+        <div class="details-label">País:</div>
+        <div class="details-value">@Model.Destino.Pais</div>
+    </div>
+
+    <form method="post">
+        <input type="hidden" asp-for="Destino.Id" />
+        <div class="action-buttons">
+            <input type="submit" value="Excluir" class="btn btn-outline-azul-escuro" />
+            <a asp-page="./Index" class="btn btn-outline-azul-escuro">Voltar</a>
+        </div>
+    </form>
+</div>

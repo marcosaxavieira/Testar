@@ -1,0 +1,100 @@
+﻿@page "{id:int}"
+@using AgenciaTurismo.Pages.Destinos
+@model AgenciaTurismo.Pages.Destinos.DetailsModel
+
+@{
+    ViewData["Title"] = "Detalhes do Destino";
+}
+
+<style>
+    body {
+        font-family: 'Segoe UI', Roboto, sans-serif;
+        background-color: #a3b0bc;
+        color: #212529;
+    }
+
+    .details-container {
+        background-color: rgba(255, 255, 255, 0.6);
+        border-radius: 12px;
+        padding: 40px;
+        margin: 50px auto;
+        max-width: 600px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(4px);
+        text-align: left;
+    }
+
+    .details-title {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: #0a58ca;
+        margin-bottom: 30px;
+    }
+
+    .details-field {
+        margin-bottom: 20px;
+    }
+
+    .label {
+        font-weight: 600;
+        color: #495057;
+        display: block;
+        margin-bottom: 6px;
+    }
+
+    .value {
+        font-size: 1rem;
+        background-color: #f8f9fa;
+        border: 1px solid #ced4da;
+        border-radius: 6px;
+        padding: 8px 12px;
+        color: #212529;
+    }
+
+    .btn-outline-azul-escuro {
+        color: #0a58ca;
+        border: 1px solid #0a58ca;
+        background-color: transparent;
+        transition: all 0.3s ease;
+        font-weight: 500;
+        border-radius: 8px;
+        padding: 6px 14px;
+        text-decoration: none;
+    }
+
+        .btn-outline-azul-escuro:hover {
+            background-color: #0a58ca;
+            color: white;
+        }
+
+    .action-buttons {
+        margin-top: 30px;
+        display: flex;
+        gap: 10px;
+    }
+</style>
+
+<div class="details-container">
+    <h2 class="details-title">Detalhes do Destino</h2>
+
+    @if (Model.Destino == null)
+    {
+        <p class="text-danger">Destino não encontrado.</p>
+    }
+    else
+    {
+        <div class="details-field">
+            <label class="label">Cidade:</label>
+            <div class="value">@Model.Destino.Cidade</div>
+        </div>
+
+        <div class="details-field">
+            <label class="label">País:</label>
+            <div class="value">@Model.Destino.Pais</div>
+        </div>
+
+        <div class="action-buttons">            
+            <a asp-page="./Index" class="btn btn-outline-azul-escuro">Voltar</a>
+        </div>
+    }
+</div>

@@ -1,0 +1,94 @@
+﻿@page "{id:int}"
+@using AgenciaTurismo.Pages.PacotesTuristicos
+@model AgenciaTurismo.Pages.PacotesTuristicos.PacoteReservaModel
+
+@{
+    ViewData["Title"] = "Reservas do Pacote";
+}
+
+<style>
+    body {
+        font-family: 'Segoe UI', Roboto, sans-serif;
+        background-color: #f4f6f9;
+    }
+
+    .card {
+        background-color: white;
+        border-radius: 8px;
+        padding: 30px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        margin-top: 30px;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card-title {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: #343a40;
+        margin: 0;
+    }
+
+    .btn-outline-azul-escuro {
+        color: #0a58ca;
+        border: 1px solid #0a58ca;
+        background-color: transparent;
+        transition: all 0.3s ease;
+        font-weight: 500;
+        border-radius: 8px;
+        padding: 6px 14px;
+        text-decoration: none;
+    }
+
+        .btn-outline-azul-escuro:hover {
+            background-color: #0a58ca;
+            color: white;
+        }
+
+    .table thead {
+        background-color: #e9ecef;
+    }
+
+    .table th {
+        font-weight: 600;
+        color: #495057;
+    }
+
+    .table td {
+        color: #212529;
+        vertical-align: middle;
+    }
+</style>
+
+<div class="card">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="card-title">@Model.Pacote.Titulo</h2>
+        <a asp-page="Index" class="btn-outline-azul-escuro">Voltar</a>
+    </div>
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Cliente</th>
+                <th>Data da Reserva</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var reserva in Model.Pacote.Reservas)
+            {
+                <tr>
+                    <td>@reserva.Cliente?.Nome</td>
+                    <td>@($"{reserva.DataReserva:dd/MM/yyyy}")</td>
+                </tr>
+
+              
+            }
+        </tbody>
+    </table>
+    
+    <!-- Total das reservas -->    
+    <div class="d-flex justify-content-end mt-3">
+        <h5><strong>Total das reservas: @Model.totalReserva</strong></h5>
+    </div>
+</div>

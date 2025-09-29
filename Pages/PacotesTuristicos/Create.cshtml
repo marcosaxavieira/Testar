@@ -1,0 +1,135 @@
+﻿@page
+@using AgenciaTurismo.Pages.PacotesTuristicos
+@model AgenciaTurismo.Pages.PacotesTuristicos.CreateModel
+
+@{
+    ViewData["Title"] = "Incluir Pacote Turístico";
+}
+
+<style>
+    body {
+        font-family: 'Segoe UI', Roboto, sans-serif;
+        background-color: #a3b0bc;
+        color: #212529;
+    }
+
+    .create-container {
+        background-color: rgba(255, 255, 255, 0.6);
+        border-radius: 12px;
+        padding: 40px;
+        margin: 50px auto;
+        max-width: 600px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(4px);
+        text-align: left;
+    }
+
+    .create-title {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: #0a58ca;
+        margin-bottom: 30px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-weight: 600;
+        color: #495057;
+        margin-bottom: 6px;
+        display: block;
+    }
+
+    input.form-control {
+        border-radius: 6px;
+        padding: 8px 12px;
+        font-size: 1rem;
+        background-color: #f8f9fa;
+        border: 1px solid #ced4da;
+        color: #212529;
+    }
+
+    .inline-group {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+
+        .inline-group .form-group {
+            flex: 1;
+        }
+
+    .btn-outline-azul-escuro {
+        color: #0a58ca;
+        border: 1px solid #0a58ca;
+        background-color: transparent;
+        transition: all 0.3s ease;
+        font-weight: 500;
+        border-radius: 8px;
+        padding: 6px 14px;
+        text-decoration: none;
+    }
+
+        .btn-outline-azul-escuro:hover {
+            background-color: #0a58ca;
+            color: white;
+        }
+
+    .action-buttons {
+        margin-top: 30px;
+        display: flex;
+        gap: 10px;
+    }
+
+    .text-danger {
+        color: #dc3545;
+    }
+</style>
+
+<div class="create-container">
+    <h2 class="create-title">Incluir Pacote Turístico</h2>
+
+    <form method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+        <div class="form-group">
+            <label asp-for="PacoteTuristico.Titulo">Título:</label>
+            <input asp-for="PacoteTuristico.Titulo" class="form-control" />
+            <span asp-validation-for="PacoteTuristico.Titulo" class="text-danger"></span>
+
+        </div>
+
+        <div class="inline-group">
+            <div class="form-group">
+                <label asp-for="PacoteTuristico.DataInicio">Data de Início:</label>
+                <input asp-for="PacoteTuristico.DataInicio" type="date" class="form-control" />
+                <span asp-validation-for="PacoteTuristico.DataInicio" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="PacoteTuristico.CapacidadeMaxima">Capacidade Máxima:</label>
+                <input asp-for="PacoteTuristico.CapacidadeMaxima" class="form-control" maxlength="3" />
+                <span asp-validation-for="PacoteTuristico.CapacidadeMaxima" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="PacoteTuristico.Preco">Preço:</label>
+            <input asp-for="PacoteTuristico.Preco" class="form-control" type="number" step="0.01" min="0" max="99999.99" />
+            <span asp-validation-for="PacoteTuristico.Preco" class="text-danger"></span>
+        </div>
+
+        <div class="action-buttons">
+            <input type="submit" value="Salvar" class="btn btn-outline-azul-escuro" />
+            <a asp-page="Index" class="btn btn-outline-azul-escuro">Voltar</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
